@@ -6,17 +6,17 @@ import java.util.Scanner;
 public class Sum {
         public static void main(String[] args) {
             Scanner in = new Scanner(System.in);
-            int [] a = new int[]{1,2,3,4,5}; // Непосредственно массив элементов Сумма = 15
+            int [] a = new int[]{1,2,3,4,5};
             int sum = 0;
 
-            for (int i=0; i < 5; i++){  // Сумма через for
+            for (int i=0; i < 5; i++){
                 sum += a[i];
             }
             System.out.println("Sum(for):" + sum);
 
             sum =0;
             int i=0;
-            while (i < 5){  // Сумма через while
+            while (i < 5){
                 sum += a[i];
                 i++;
             }
@@ -24,7 +24,7 @@ public class Sum {
 
             sum =0;
             i=0;
-            do{  // Сумма через do while
+            do{
                 sum += a[i];
                 i++;
             }while(i < 5);
